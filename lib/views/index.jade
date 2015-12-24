@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    #container
+      #namesWrapper
+        h2 Chat IO
+        p Create Username
+        form#userNameForm(action='post')
+          input#usernam
+          input(type='submit', value='Submit')
+
+      #mainWrapper
+        h2 Chat IO
+        #chatWrapper
+          #chatWindow
+          form#messageForm(action='')
+            input#message(type='text', placeholder='Say something...')
+            input(type='hidden', value='Submit')
+        #userWrapper
+          #user jack
+
