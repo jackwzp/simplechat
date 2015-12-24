@@ -5,8 +5,9 @@ block content
       #namesWrapper
         h2 Chat IO
         p Create Username
+        #nameError
         form#userNameForm(action='post')
-          input#usernam
+          input#username
           input(type='submit', value='Submit')
 
       #mainWrapper
@@ -17,5 +18,5 @@ block content
             input#message(type='text', placeholder='Say something...')
             input(type='hidden', value='Submit')
         #userWrapper
-          #user jack
+          #users
 
